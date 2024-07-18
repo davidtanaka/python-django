@@ -16,22 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from django.http import HttpResponse
+from home import views
+from blog import views as views_blog
 
-# HTTP Request <-> HTTP Response
-# MVT (MVC)
-
-
-def home(request):
-    print('Home')
-    return HttpResponse('Home')
-
-def myView(request):
-    print('Home')
-    return HttpResponse('Blog')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('blog/', myView),
-    path('', home),
+    path('blog/', views_blog.myView),
+    path('', views.home),
 ]
