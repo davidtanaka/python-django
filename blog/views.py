@@ -3,7 +3,6 @@ from blog.data import posts
 # Create your views here.
 def blog(request):
     context = {
-        'text': 'Você está no blog', 
         'title': 'Essa página é um exemplo - ',
         'posts': posts
     }
