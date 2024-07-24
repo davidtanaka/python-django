@@ -7,12 +7,24 @@ def blog(request):
         'posts': posts
     }
 
-    print('blog')
     return render(
         request,
         'blog/index.html',
         context=context
     )
+
+
+def post(request, id):
+    context = {
+        'posts': posts
+    }
+
+    return render(
+        request,
+        'blog/index.html',
+        context=context
+    )
+
 
 def exemplo(request):
     context_exemplo = {'text': 'Você está vendo um exemplo'}
