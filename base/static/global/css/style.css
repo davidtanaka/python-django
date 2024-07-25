@@ -54,6 +54,7 @@ body {
 .menu__links a {
   background-color: #000000;
   padding: 1.5rem;
+  display: block;
 }
 
 @media (min-width: 600px) {
