@@ -2,6 +2,7 @@ __localcode
 .DS_Store
 chromedriver
 mysql_211
+static_files
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
