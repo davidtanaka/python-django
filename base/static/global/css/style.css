@@ -41,13 +41,19 @@ body {
 }
 
 .menu {
-  background: #fff;
+  background: #000000;
   padding: 1.5rem;
 
 }
 
 .menu__links {
   list-style: none;
+  display: flex;
+}
+
+.menu__links a {
+  background-color: #000000;
+  padding: 1.5rem;
 }
 
 @media (min-width: 600px) {
